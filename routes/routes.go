@@ -7,5 +7,6 @@ import (
 )
 
 func SetupRoutes(r *gin.Engine) {
+	r.GET("/", controllers.RootHandler)
 	r.GET("/hello", controllers.HelloHandler)
 } 
