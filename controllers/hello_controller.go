@@ -1,7 +1,6 @@
 package controllers
 
 import (
-	"backEndGo/models/gen" // 导入生成的模型
 	"github.com/gin-gonic/gin"
 )
 
@@ -16,4 +15,4 @@ func RootHandler(c *gin.Context) {
 	c.JSON(200, gin.H{
 		"message": "hello",
 	})
-} 
+}
